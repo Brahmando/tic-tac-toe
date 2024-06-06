@@ -40,10 +40,16 @@ const App = () => {
 
     if (winner) {
       if (winner === "O") {
+        setTimeout(() => {
+          alert("O won")
+        }, 500);
         let { oScore } = scores;
         oScore += 1;
         setScores({ ...scores, oScore })
       } else {
+        setTimeout(() => {
+          alert("X won")
+        }, 500);
         let { xScore } = scores;
         xScore += 1;
         setScores({ ...scores, xScore })
